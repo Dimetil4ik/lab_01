@@ -203,7 +203,7 @@ int main()
 
      std::cout << "\n"; 
         size_t j;  size_t y = std::to_string(max_length).size();
-           std::string t(y, '0');
+           std::string t();
          std::string* g = &t; // (std::string*) ::operator new(sizeof(std::string(y, '0')));
           
          std::string str1(SCREEN_WIDTH + 2 + 3, '-');
