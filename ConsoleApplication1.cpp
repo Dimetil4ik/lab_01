@@ -183,10 +183,10 @@ int main()
     for (size_t i = 0; i < number_count; ++i) {
         found = false;
            for (size_t j = 0; (j < bin_count - 1) && !found; ++j) {
-             auto lower_border = ((double)min) + ((double)j) * bin_size;
+             auto lower_border = min + (j) * bin_size;
             auto higher_border = lower_border + bin_size; 
             
-            if ((((double)numbers[i]) >= lower_border) && (((double)numbers[i]) < higher_border)) {
+            if (((numbers[i]) >= lower_border) && ((numbers[i]) < higher_border)) {
                ++bins[j];
                 found = true;
             }
